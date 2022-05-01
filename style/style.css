@@ -19,6 +19,10 @@ body {
 ul {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+}
 .ico {
     display: block;
 }
@@ -41,10 +45,13 @@ ul {
 .header ul {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .header .nav .burger-nav {
     width: 40%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header .ico-logo_header {
@@ -54,3 +61,10 @@ ul {
     height: 65px;
 }
 
+.header .button_header {
+    width: 200px;
+    height: 60px;
+    background-color: #5B6460;
+    color: #fff;
+    border: none;
+}
