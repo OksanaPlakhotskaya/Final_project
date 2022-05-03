@@ -3,7 +3,7 @@
     max-width: 100%;
     position: relative;
     margin: auto;
-    height: 300px;
+  /*  height: 300px; */
     margin-bottom: 15px;
 }
 /* Картинка маштабируется по отношению к родительскому элементу */
@@ -12,13 +12,16 @@
     width: 100%;
     border: none !important;
     box-shadow: none !important;
+    background: #333333;
+    opacity: 0.85;
 }
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
-    cursor: pointer;
+    cursor: pointer; 
     position: absolute;
     top: 0;
-    top: 50%;
+    top: 90%;
+    left: 45%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -29,8 +32,9 @@
     border-radius: 0 3px 3px 0;
 }
 .slider .next {
-    right: 0;
+    right: 48%;
     border-radius: 3px 0 0 3px;
+    margin-left: 45px;
 }
 /* При наведении на кнопки добавляем фон кнопок */
 .slider .prev:hover,
@@ -46,7 +50,7 @@
     font-size: 35px;
     /* Выравнивание текста по горизонтали и по вертикали*/
     left: 60%;
-    top: 50%;
+    top: 20%;
     transform: translate(-50%, -50%);
     /* Тень*/
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
@@ -58,29 +62,32 @@
     font-size: 35px;
     /* Выравнивание текста по горизонтали и по вертикали*/
     left: 70%;
-    top: 80%;
+    top: 35%;
     transform: translate(-50%, -50%);
     /* Тень*/
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
 
-/* Кружочки */
+/* Индикация полоски */
 .slider-dots {
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    top: 30%;
 }
 .slider-dots_item{
     cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    position: relative;
+    height: 60px;
+    width: 1.5px;
+    margin: 0 30px;
+    background-color: #aaa;
+   /* border-radius: 50%; */
+    display: block;
+    transition: background-color 0.6s ease; 
 }
 .active,
 .slider-dots_item:hover {
-    background-color: #aaa;
+    background-color: #fff;
 }
 /* Анимация слайдов */
 .slider .item {
