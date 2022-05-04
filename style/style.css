@@ -24,6 +24,7 @@ ul {
 }
 .nav a {
     text-decoration: none;
+    color: #000000;
 }
 .ico {
     display: block;
@@ -63,7 +64,7 @@ ul {
     height: 65px;
 }
 
-.header .button_header {
+.button_header {
     width: 200px;
     height: 60px;
     background-color: #5B6460;
@@ -82,16 +83,16 @@ ul {
     left: 10%;
     display: flex;
 } 
-.header .price .button_header, .price .button_price  {
+.price .button_header, .price .button_price  {
     width: 260px;
     height: 100px;
 }
-.header .price .button_header {
-    font-size: 20px;
-    line-height: 18px;
+.price .button_header {
+    font-size: 18px;
+    line-height: 20px;
 }
 
-.header .price .button_price {
+.price .button_price {
     background-color: #E9ECE0;
     width: 150px;
     padding-left: 15px;
@@ -107,7 +108,6 @@ ul {
 .button_price p:last-child {
     padding-left: 20px;
 }
-
 /* -----------------  end header ---------------------- */
 
 /* -----------------  The cabins, The forest ---------------------- */
@@ -115,8 +115,10 @@ ul {
 .cabins, .forest {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 150px;
 }
+.cabins {
+    margin-bottom: 150px;
+}  
 .cabins .cabins_text, .forest .forest_text{
     padding: 0 150px;
     display: flex;
@@ -126,6 +128,7 @@ ul {
 .cabins .cabins_text h3, .forest .forest_text h3 {
     font-size: 40px;
     color: #5B6460;
+    font-weight: lighter;
 }
 .cabins .cabins_picture .ico, .forest .forest_picture .ico {
     background-size: contain;
@@ -169,10 +172,11 @@ ul {
 
 .forest .forest_text {
 background-color: #E9ECE0;
+height: 650px;
 }
 .forest .forest_picture iframe {
     width: 100%;
-    height: 650px;
+    height: 100%;
 }
 
 /* ----------------- END The cabins, The forest ---------------------- */
@@ -187,11 +191,12 @@ background-color: #E9ECE0;
  color: #fff;
  text-align: center;
  padding: 100px 0;
+ font-weight: lighter;
 }
 .facilities .ico {
     width: 70px;
     height: 70px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 .facilities .facilities_picture {
     display: grid;
@@ -199,7 +204,7 @@ background-color: #E9ECE0;
     column-gap: 10px;
     row-gap: 80px;
     text-align: center;
-    padding: 0 320px;
+    padding: 0 320px 150px;
 }
 .facilities .facilities_picture>div {
     display: flex;
@@ -249,3 +254,96 @@ background-color: #E9ECE0;
     background: url(/img/towels.png);
 }
 /* ----------------- END Facilities ---------------------- */
+
+/* ----------------- More about ---------------------- */
+
+.more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-bottom: 150px;
+}
+.more .ico_more1, .more .ico_more2 {
+    height: 560px;
+    width: 100%;
+}
+.more .ico_more1 {
+background: url(/img/more_about_us1.png);
+}
+.more .ico_more2 {
+    background: url(/img/more_about_us2.png);
+}
+.more .disc {
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    background-color: #E9ECE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - 80px);
+    top: calc(50% - 80px);
+}
+.more .disc a {
+    text-decoration: none;
+    color: #333333;
+}
+/* ----------------- END More about ---------------------- */
+
+/* ----------------- Touch ---------------------- */
+.touch {
+    display: flex;
+    margin-bottom: 130px;
+}
+.touch div {
+    margin: 0 auto;
+}
+.touch h3 {
+    font-size: 40px;
+    color: #5B6460;
+    margin-bottom: 50px;
+}
+.touch .social {
+    display: flex;
+}
+.touch .touch_text {
+    width: 50%;
+}
+.touch .touch_text p:first-child {
+    margin-bottom: 20px;
+}
+.touch .social a {
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.touch .social .ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5B6460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.touch .ico_social1 {
+    background: url(/img/instagram_ico.png) no-repeat center;
+}
+.touch .ico_social2 {
+    background: url(/img/facebook_ico.png) no-repeat center;
+}
+.touch .ico_social3 {
+    background: url(/img/twitter_ico.png) no-repeat center;
+}
+
+.touch .ico_touch {
+    background: url(/img/book_a_hut.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 190px;
+}
+.touch .price>div {
+    display: flex;
+}
+
+/* ----------------- END Touch ---------------------- */
