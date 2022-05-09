@@ -6,14 +6,30 @@
   /*  height: 300px; */
     margin-bottom: 15px;
 }
+
+.slider::after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: 0.3;
+    width: 100%;
+    height: 99%;
+    z-index: -1;
+}
 /* Картинка маштабируется по отношению к родительскому элементу */
 .slider .item img {
     object-fit: cover;
     width: 100%;
     border: none !important;
     box-shadow: none !important;
-    background: #333333;
-    opacity: 0.85;
+    /* background: #333333;
+    opacity: 0.85; */
+    z-index: -2;
+    position: relative;
 }
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
@@ -52,8 +68,7 @@
     left: 45%;
     top: 20%;
     transform: translate(-5%, -80%);
-    /* Тень*/
-    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    /* text-shadow: 1px 1px 1px #000, 0 0 1em #000; */
 }
 .header .slideText2 {
     position: absolute;
@@ -65,8 +80,7 @@
     left: 75%;
     top: 35%;
     transform: translate(-35%, -95%);
-    /* Тень*/
-    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    /* text-shadow: 1px 1px 1px #000, 0 0 1em #000; */
 }
 
 /* Индикация полоски */
@@ -91,7 +105,7 @@
     background-color: #fff;
 }
 /* Анимация слайдов */
-.slider .item {
+.slider .item:not(.slider::after) {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;

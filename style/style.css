@@ -62,8 +62,11 @@ ul {
     background-size: cover;
     width: 70px;
     height: 65px;
+    margin-left: 150px
 }
-
+.nav .button_header {
+    margin-right: 30px;
+}
 .button_header {
     width: 200px;
     height: 60px;
@@ -275,19 +278,23 @@ background: url(/img/more_about_us1.png);
 }
 .more .disc {
     position: absolute;
-    width: 157px;
+    /* width: 157px;
     height: 157px;
-    border-radius: 50%;
-    background-color: #E9ECE0;
+    border-radius: 50%; */
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    left: calc(50% - 80px);
+    left: calc(50% - 85px);
     top: calc(50% - 80px);
 }
 .more .disc a {
     text-decoration: none;
     color: #333333;
+    padding: 65px 30px;
+    border-radius: 50%;
+    background-color: #E9ECE0;
+    border-radius: 50%;
 }
 /* ----------------- END More about ---------------------- */
 
@@ -307,9 +314,9 @@ background: url(/img/more_about_us1.png);
 .touch .social {
     display: flex;
 }
-.touch .touch_text {
+/* .touch .touch_text {
     width: 50%;
-}
+} */
 .touch .touch_text p:first-child {
     margin-bottom: 20px;
 }
@@ -347,3 +354,104 @@ background: url(/img/more_about_us1.png);
 }
 
 /* ----------------- END Touch ---------------------- */
+
+/* ----------------- Footer ---------------------- */
+
+footer {
+    display: flex;
+    background-color: #5B6460;
+}
+footer > div {
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* footer div:first-child {
+    width: 50%;
+} */
+footer > div p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: lighter;
+    color: #fff;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+footer .footer_link {
+    margin-bottom: 50px;
+}
+footer .footer_link a {
+    text-decoration:  none;
+    color: #fff;
+    font-size: 14px;
+    padding-right: 15px;
+    font-weight: lighter;
+}
+footer .card {
+    display: flex;
+    justify-content: right;
+}
+footer .card .ico {
+    margin-left: 40px;
+}
+footer .card .ico_card1 {
+    background: url(/img/paypal.png) no-repeat;
+    width: 50px;
+    height: 50px;
+}
+footer .card .ico_card2 {
+    background: url(/img/mastercard.png) no-repeat;
+    width: 50px;
+    height: 40px;
+}
+footer .card .ico_card3 {
+    background: url(/img/visa.png) no-repeat;
+    width: 50px;
+    height: 50px;
+}
+footer .card .ico_card4 {
+    background: url(/img/bank.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.email button {
+    background-color: #5B6460;
+    color: #fff;
+    border: none;
+}
+.email button:hover {
+    cursor: pointer;
+}
+.email input {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 30px;
+    background-color: #5B6460;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    padding-right: 200px;
+}
+.email::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background-color: #EFEFEF;
+    margin-bottom: 50px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+ }
+ input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+ }
+ input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+ }
+ input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+ }
+/* ----------------- END Footer ---------------------- */

@@ -20,8 +20,8 @@
                 <nav class="burger-nav">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">THE HUT</a></li>
-                        <li><a href="#">THE AREA</a></li>
+                        <li><a href="hut.html">THE HUT</a></li>
+                        <li><a href="area.html">THE AREA</a></li>
                         <li><a href="#">BOOKING</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">FAQ</a></li>
@@ -44,20 +44,22 @@
                 </div>
             
                 <div class="item">
-                    <img src="img/slide3.jpg" alt="Третий слайд">
+                    <img src="img/main1.png" alt="Третий слайд">
                     <div class="slideText">Find peace in the Forest</div>
                     <div class="slideText2">Come and stay in out hut hotel near Mariager Fjord in Denmark</div>
                 </div>
             
                 <a class="prev" onclick="minusSlide()">&xlarr;</a>
                 <a class="next" onclick="plusSlide()">&xrarr;</a>
+
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>
             </div>
             
-            <div class="slider-dots">
-                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
-                <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
-                <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
-            </div>
+            
 <!-- ---------------------------- слайдер конец -------------------------------------------   -->  
             <div class="price">
                 <div>
@@ -220,13 +222,35 @@
 
 
 <!-- ---------------------------- END Touch -------------------------------------------   --> 
+
+<!-- ---------------------------- Footer -------------------------------------------   --> 
        <footer>
-           <div></div>
-           <div></div>
+           <div>
+               <p>Newsletter</p>
+               <div class="email">
+                    <input type="email" placeholder="Email Adrdess">
+                    <button>&xrarr;</button>
+               </div>
+               <p>Sign up to our newsletter for special things and receive <br /> 10% off your next order.</p>
+               <p>© 2021 The Glass Huts</p>
+           </div>
+           <div>
+               <div class="footer_link">
+                    <a href="#">TERMS AND CONDITIONS</a>
+                    <a href="#">CENCELLATION POLICY</a>
+                    <a href="#">PRIVACY POLICY</a>
+               </div>
+               <div class="card">
+                <a href="#"><i class="ico ico_card1"></i></a>
+                <a href="#"><i class="ico ico_card2"></i></a>
+                <a href="#"><i class="ico ico_card3"></i></a>
+                <a href="#"><i class="ico ico_card4"></i></a>
+            </div>
+           </div>
        </footer>
    </div> 
 
-
+<!-- ---------------------------- END Footer -------------------------------------------   --> 
 
    <script src="script/slider.js"></script>
 </body>

@@ -1,0 +1,131 @@
+.hut .header {
+    margin-bottom: 0;
+}
+.main_picture {
+    background: url(/img/hut.png);
+    width: 100%;
+    height: 350px;
+}
+.hut .slider {
+    position: relative;
+}
+/* .hut .slider::after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: 0.7;
+    width: 1024px;
+    height: 350px;
+} */
+
+.hut .slider .item .slideText{
+    font-size: 70px;
+    line-height: 72px;
+    font-weight: lighter;
+    position: absolute;
+    color: #fff;
+    left: 45%;
+    top: 20%;
+    transform: translate(-5%, -80%);
+}
+
+.hut .slider .slider .prev, .hut .slider .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.hut .slider .slider-dots {
+    text-align: center;
+}
+.hut .slider .slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.hut .slider .active,
+.hut .slider .slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+/* --------------  outside ----------------  */
+
+.outside,
+.inside,
+.practicalities {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.outside .ico_outside {
+    background: url(/img/hut_outside.png);
+}
+.inside .ico_inside {
+    background: url(/img/hut_inside.png);
+}
+.practicalities .ico_practicalities {
+    background: url(/img/hut_breakfast.png);
+}
+.outside .ico_outside, 
+.inside .ico_inside,
+.practicalities .ico_practicalities {
+    width: 546px;
+    height: 478px;
+}
+
+.outside .outside_text,
+.practicalities .practicalities_text {
+    padding-left: 140px;
+}
+.inside .inside_text {
+    padding-right: 140px;
+}
+.outside .outside_text, 
+.inside .inside_text,
+.practicalities .practicalities_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #5B6460;
+    font-weight: lighter;
+}
+.outside .outside_text h3, 
+.inside .inside_text h3,
+.practicalities .practicalities_text h3 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.outside .outside_text p, 
+.inside .inside_text p,
+.practicalities .practicalities_text p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.outside .outside_text p a,
+.inside .inside_text p a,
+.practicalities .practicalities_text p a {
+    padding-right: 15px;
+    color: #5B6460;
+    font-style: italic;
+}
+/* --------------  END outside ----------------  */
