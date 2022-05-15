@@ -455,3 +455,151 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
  }
 /* ----------------- END Footer ---------------------- */
+
+
+/* ---------------POP-UP ФОРМА----------------------*/
+
+/* Фон за формой */
+.modal {
+    display: none; /* Модальное окно скрыто по умолчанию */
+    position: fixed; /* Фикс. Позиция на главной странице */
+    z-index: 1; /* Отображение на заднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% по ширине */
+    height: 100%; /* 100% по высоте */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    }
+    /* Содержание модального окна*/
+    .modal-content {
+    background-color: #E9ECE0;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Может быть больше и меньше, зависит от размеров экрана */
+    height: 70%;
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+    }
+    /* Основные свойства кнопки «Закрыть» */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    /* Свойства кнопки «Закрыть», когда вы наводите на нее курсор или взаимодействуете с ней */
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+/*----------------END POP-UP ФОРМА----------------------*/
+
+.decor {
+    position: relative;
+    max-width: 450px;
+    margin: 50px auto 0;
+    background: white;
+    border-radius: 30px;
+ }
+ .form-left-decoration,
+.form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #E9ECE0;
+    border-radius: 20px;
+ }
+ .form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+ }
+ .form-right-decoration {
+    top: 60px;
+    right: -30px;
+ }
+ .form-left-decoration:before, 
+ .form-left-decoration:after, 
+ .form-right-decoration:before, 
+ .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+ }
+ .form-left-decoration:before {
+    top: -20px;
+ }
+ .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+ }
+ .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+ }
+ .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+ }
+ .circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+ }
+ .form-inner {
+    padding: 50px;
+ }
+ .form-inner input::placeholder{
+     color: #333333;
+ }
+ .form-inner input, 
+ .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background:  #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+ }
+ .form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #808E88;
+    border-bottom: 4px solid #808E88;
+    color: #fff;
+    font-size: 14px;
+ }
+ .form-inner textarea {
+    resize: none;
+ }
+ .form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+    margin-bottom: 15px;
+ }
+ .form-inner .book_date {
+     display: flex;
+     justify-content: space-around;
+ }
+ .form-inner .book_date div {
+     margin-right: 15px;
+     text-align: center;
+ }
