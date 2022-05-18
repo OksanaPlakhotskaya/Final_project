@@ -22,12 +22,51 @@
                          <li><a href="hut.html">THE HUT</a></li>
                          <li><a href="area.html">THE AREA</a></li>
                          <li><a href="#">BOOKING</a></li>
-                         <li><a href="#">ABOUT US</a></li>
+                         <li><a href="about.html">ABOUT US</a></li>
                          <li><a href="#">FAQ</a></li>
                      </ul>
                  </nav>
-                 <button class="button button_header">BOOK NOW</button>
+                 <button id='myBtn' class="button button_header">BOOK NOW</button>
              </div>
+             <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                    <form class="decor">
+                        <div class="form-left-decoration"></div>
+                        <div class="form-right-decoration"></div>
+                        <div class="circle"></div>
+                        <div class="form-inner">
+                        <h3>BOOK NOW</h3>
+                        <input type="text" placeholder="FirstName">
+                        <input type="text" placeholder="LastName">
+                        <input type="phone" placeholder="+375 44 7851189">
+                        <input type="email" placeholder="Email">
+                        <div class="book_date">
+                            <div>
+                                <label for="date">Arrival date </label>
+                                <input type="date" class="date" name="date"/>
+                            </div>
+                            <div>
+                                <label for="date">Departure date </label>
+                                <input type="date" class="date" name="date"/>
+                            </div> 
+                        </div>
+                        <div class="book_guests">
+                            <div>
+                                <label for="date">Number of guests </label>
+                                <input type="number" placeholder="1">
+                            </div>
+                            <div>
+                                <label for="date">Children </label>
+                                <input type="number" placeholder="1">
+                            </div>
+                        </div>
+                        <textarea placeholder="Comments..." rows="3"></textarea>
+                        <input type="submit" value="SEND">
+                        </div>
+                        </form>
+                </div>
+                </div>
         </header>
         <div class="booking_picture"><i class="ico ico_booking"></i></div>
 
@@ -57,5 +96,6 @@
         </footer>
     </div>
     <script src="comments.js"></script>
+    <script src="/script/index.js"></script>
 </body>
 </html>

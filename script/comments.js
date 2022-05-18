@@ -1,10 +1,7 @@
-
-  const getComments = async function () {
-      let url = 'https://jsonplaceholder.typicode.com/comments';
-
-        return await fetch(url)
-        .then(resp => resp.json())
-        .then(data => {
-            return data;
-        })
-  }();
+// async function comments(){
+//   return await fetch('https://jsonplaceholder.typicode.com/comments/1')
+//   .then(response => response.json())
+//   .then(json => console.log(json))
+// }
+// // comments();
+// export default {comments}

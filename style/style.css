@@ -113,6 +113,8 @@ ul {
 }
 /* -----------------  end header ---------------------- */
 
+
+
 /* -----------------  The cabins, The forest ---------------------- */
 
 .cabins, .forest {
@@ -212,7 +214,15 @@ height: 650px;
 .facilities .facilities_picture>div {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+
 } 
+.facilities .facilities_picture>div:hover {
+    -webkit-box-shadow: 5px 0px 13px 20px rgba(186,182,186,1);
+    -moz-box-shadow: 5px 0px 13px 20px rgba(186,182,186,1);
+    box-shadow: 5px 0px 13px 20px rgba(186,182,186,1);
+    border-radius: 10%;
+}
 .facilities .facilities_picture a {
     text-decoration: none;
     color: #fff;
@@ -296,6 +306,11 @@ background: url(/img/more_about_us1.png);
     background-color: #E9ECE0;
     border-radius: 50%;
 }
+
+.more .disc a:hover {
+    background-color: #5B6460;
+    color: #fff;
+}
 /* ----------------- END More about ---------------------- */
 
 /* ----------------- Touch ---------------------- */
@@ -306,7 +321,8 @@ background: url(/img/more_about_us1.png);
 .touch div {
     margin: 0 auto;
 }
-.touch h3 {
+.touch h3,
+h2 {
     font-size: 40px;
     color: #5B6460;
     margin-bottom: 50px;
@@ -354,6 +370,35 @@ background: url(/img/more_about_us1.png);
 }
 
 /* ----------------- END Touch ---------------------- */
+
+/*------------------Best clients-----------------------*/
+.best_clients {
+    margin-bottom: 150px;
+}
+#clients {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 25px;
+}
+#clients > div {
+    align-self: center;
+    justify-self: center;
+}
+#clients div img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#clients div p {
+    font-style: italic;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+/*------------------END Best clients-----------------------*/
 
 /* ----------------- Footer ---------------------- */
 
@@ -479,7 +524,6 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     padding: 20px;
     border: 1px solid #888;
     width: 30%; /* Может быть больше и меньше, зависит от размеров экрана */
-    height: 70%;
     box-shadow: 5px 10px 5px #666; /*Добавить тень */
     }
     /* Основные свойства кнопки «Закрыть» */
@@ -497,7 +541,7 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     cursor: pointer;
     }
 
-/*----------------END POP-UP ФОРМА----------------------*/
+
 
 .decor {
     position: relative;
@@ -595,11 +639,15 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     color: #707981;
     margin-bottom: 15px;
  }
- .form-inner .book_date {
+ .form-inner .book_date,
+ .form-inner .book_guests {
      display: flex;
      justify-content: space-around;
  }
- .form-inner .book_date div {
+ .form-inner .book_date div,
+ .form-inner .book_guests div {
      margin-right: 15px;
      text-align: center;
  }
+
+ /*----------------END POP-UP ФОРМА----------------------*/
