@@ -19,6 +19,9 @@ body {
 ul {
     list-style-type: none;
 }
+button:hover {
+ cursor: pointer;    
+}
 .ico {
     display: block;
 }
@@ -66,6 +69,9 @@ ul {
 }
 .nav .button_header {
     margin-right: 30px;
+}
+.dropdown {
+    display: none;
 }
 .button_header {
     width: 200px;
@@ -222,6 +228,7 @@ height: 650px;
     -moz-box-shadow: 5px 0px 13px 20px rgba(186,182,186,1);
     box-shadow: 5px 0px 13px 20px rgba(186,182,186,1);
     border-radius: 10%;
+    transition: 0.7s;
 }
 .facilities .facilities_picture a {
     text-decoration: none;
@@ -310,6 +317,7 @@ background: url(/img/more_about_us1.png);
 .more .disc a:hover {
     background-color: #5B6460;
     color: #fff;
+    transition: 1s;
 }
 /* ----------------- END More about ---------------------- */
 
@@ -349,14 +357,29 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+.touch .social .ico:hover {
+    background-color: #E9ECE0;
+}
 .touch .ico_social1 {
     background: url(/img/instagram_ico.png) no-repeat center;
+}
+.touch .ico_social1:hover {
+    background: url(/img/instagram1.png) no-repeat center;
+    transition: 1s;
 }
 .touch .ico_social2 {
     background: url(/img/facebook_ico.png) no-repeat center;
 }
+.touch .ico_social2:hover {
+    background: url(/img/face.png) no-repeat center;
+    transition: 1s;
+}
 .touch .ico_social3 {
     background: url(/img/twitter_ico.png) no-repeat center;
+}
+.touch .ico_social3:hover {
+    background: url(/img/tw.png) no-repeat center;
+    transition: 1s;
 }
 
 .touch .ico_touch {
@@ -438,6 +461,11 @@ footer .card {
 }
 footer .card .ico {
     margin-left: 40px;
+    transition: 0.5s;
+}
+footer .card .ico:hover {
+   cursor: pointer;
+   transform: scale(1.5);
 }
 footer .card .ico_card1 {
     background: url(/img/paypal.png) no-repeat;
@@ -487,16 +515,16 @@ footer .card .ico_card4 {
     margin-bottom: 50px;
 }
 
-input::-webkit-input-placeholder { /* WebKit browsers */
+footer input::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
  }
- input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+footer input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:    #fff;
  }
- input::-moz-placeholder { /* Mozilla Firefox 19+ */
+footer input::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:    #fff;
  }
- input:-ms-input-placeholder { /* Internet Explorer 10+ */
+footer input:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #fff;
  }
 /* ----------------- END Footer ---------------------- */

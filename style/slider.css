@@ -190,8 +190,49 @@
     position: absolute;
     color: #fff;
     left: 40%;
-    top: 35%;
+    top: 30%;
     transform: translate(-5%, -80%);
+}
+
+.area .slider .slideButton {
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    padding: 20px 40px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+.about .slider .slideButton,
+.about .slider .slideButton1 {
+    position: absolute;
+    width: 170px;
+    height: 55px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    top: 45%;
+}
+.about .slider .slideButton {
+    left: 35%;
+}
+.about .slider .slideButton1 {
+    left: 50%;
+}
+.area .slider .item>a {
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.area .slider .ico_slider {
+    background: url(/img/Vector.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
 }
 
 .hut .slider .slider .prev, 

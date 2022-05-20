@@ -1,28 +1,25 @@
-// import {comments} from "./comments.js"
 
 // Объявить переменную модального окна в текущей области видимости
 let modal = document.getElementById('myModal');
 // Переменная кнопки, открывающей модальное окно
-let btn = document.getElementById('myBtn');
+let btn = document.getElementsByClassName('button');
 // Получение элемента <span>, который закрывает модальное окно
 let span = document.getElementsByClassName('close')[0];
 // Когда пользователь нажимает кнопку, открывается pop-up форма 
-btn.addEventListener('click', btnBlock);
+
 function btnBlock() {
   modal.style.display = 'block';
   }
+  for(let i=0;i<btn.length;i++){
+    btn[i].addEventListener("click", btnBlock, false);   
+}
 
-// btn.onclick = function() {
-// modal.style.display = 'block';
-// }
 // Когда пользователь нажимает кнопку (x) <span>, закрывается окно формы
 span.addEventListener('click', spanNone);
 function spanNone() {
   modal.style.display = 'none';
   }
-// span.onclick = function() {
-// modal.style.display = 'none';
-// }
+
 // Когда пользователь нажимает в любое место вне формы, закрыть окно формы
 window.addEventListener('click', function(event) {
   if (event.target == modal) {
@@ -30,23 +27,7 @@ window.addEventListener('click', function(event) {
   }
   })
 
-// window.onclick = function(event) {
-// if (event.target == modal) {
-// modal.style.display = 'none';
-// }
-// }
-
-
-
-// let url ='https://jsonplaceholder.typicode.com/comments/1';
-// async function comments(){
-//   return await fetch(url)
-//   .then(response => response.json())
-//   .then(json => console.log(json.email))
-// }
-// comments();
-
-/* ------------------------------------- */
+/* -----------------API-------------------- */
 function createNode(element) {
     return document.createElement(element);
 }
@@ -77,4 +58,47 @@ fetch(url)
   console.log(error);
 });
 
-/* ----------------------------------------  */
+/* -------------------END API---------------------  */
+
+/*----------------------Menu--------------------*/
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+  let dropdowns = document.getElementsByClassName("dropdown-content");
+  let i;
+  for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+
+/*----------------------END Menu--------------------*/
+
+/*----------------------LocalStorage--------------------*/
+let mailData = [];
+const emailAdd = function() {
+  let email = this.closest('.email'),
+      inputEmail = email.querySelector('input[name="mail"]').value; 
+
+      let base = {
+        mail:inputEmail
+      };
+      console.log(inputEmail);
+      mailData.push(base);
+      localStorage.setItem('mailData', JSON.stringify(mailData));
+}
+
+let buttonAdd = document.querySelector('.email');
+if(buttonAdd)buttonAdd.addEventListener('click', emailAdd);
+/*----------------------END LocalStorage--------------------*/

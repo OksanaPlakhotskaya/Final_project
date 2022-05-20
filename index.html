@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,15 +22,24 @@
                         <li><a href="#">HOME</a></li>
                         <li><a href="hut.html">THE HUT</a></li>
                         <li><a href="area.html">THE AREA</a></li>
-                        <li><a href="booking.html">BOOKING</a></li>
                         <li><a href="about.html">ABOUT US</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="index.html">HOME</a>
+                      <a href="hut.html">THE HUT</a>
+                      <a href="area.html">THE AREA</a>
+                      <a href="about.html">ABOUT US</a>
+                    </div>
+                  </div>
+        
                 <button id='myBtn' class="button button_header">BOOK NOW</button>
             </div>
 
-    
+            
             <div id="myModal" class="modal">
             <div class="modal-content">
             <span class="close">&times;</span>
@@ -121,7 +130,9 @@
                 <p>Løvtag&apos;s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.</p>
                 <a href="#">Read more</a>
             </div>
-            <div class="cabins_picture"><i class="ico ico_cabins"></i></div>
+            <div class="cabins_picture">
+                <i class="ico ico_cabins"></i>
+            </div>
        </div>
 
        <div class="picture">
@@ -272,8 +283,8 @@
            <div>
                <p>Newsletter</p>
                <div class="email">
-                    <input type="email" placeholder="Email Adrdess">
-                    <button>&xrarr;</button>
+                    <input type="email" name="mail" placeholder="Email Adrdess">
+                    <button class="add_email">&xrarr;</button>
                </div>
                <p>Sign up to our newsletter for special things and receive <br /> 10% off your next order.</p>
                <p>© 2021 The Glass Huts</p>
