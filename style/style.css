@@ -38,9 +38,9 @@ button:hover {
     margin: 0 auto;
 }
 
-.header {
+/* .header {
     margin-bottom: 120px;
-}
+} */
 
 .header .nav {
     display: flex;
@@ -81,12 +81,12 @@ button:hover {
     border: none;
 }
 
-.header .price {
+.price1 {
     position: relative;
     margin-bottom: 150px;
 }
 
-.header .price>div {
+.price1>div {
     position: absolute;
     bottom: 15%;
     left: 10%;
@@ -169,16 +169,24 @@ button:hover {
     background: url(/img/view1.png);
     width: 432px;
     height: 387px;
+    transition: 0.7s;
+}
+.picture .ico__picture1:hover,
+.picture .ico__picture2:hover,
+.picture .ico__picture3:hover {
+    transform: scale(1.2);
 }
 .picture .ico__picture2 {
     background: url(/img/view2.png);
     width: 432px;
     height: 387px;
+    transition: 0.7s;
 }
 .picture .ico__picture3 {
     background: url(/img/view3.png);
     width: 432px;
     height: 387px;
+    transition: 0.7s;
 }
 
 .forest .forest_text {

@@ -58,7 +58,7 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 /* Заголовок слайда */
-.header .slideText {
+.hotel .slideText {
     font-size: 70px;
     line-height: 72px;
     font-weight: lighter;
@@ -70,7 +70,7 @@
     transform: translate(-5%, -80%);
     /* text-shadow: 1px 1px 1px #000, 0 0 1em #000; */
 }
-.header .slideText2 {
+.hotel .slideText2 {
     position: absolute;
     color: #fff;
     text-align: center;
@@ -206,12 +206,12 @@
 .about .slider .slideButton,
 .about .slider .slideButton1 {
     position: absolute;
-    width: 170px;
-    height: 55px;
     background-color: transparent;
     color: #fff;
-    border-color: #fff;
+    border: 1px solid #fff;
     top: 45%;
+    padding: 15px 50px;
+    text-decoration: none;
 }
 .about .slider .slideButton {
     left: 35%;
