@@ -1,3 +1,237 @@
+@media (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+    .header .slideText {
+        font-size: 45px;
+    }
+    .header .nav {
+        padding: 25px 0;
+    }
+    .price1 {
+        margin-bottom: 120px;
+    }
+    .picture {
+        justify-content: space-around;
+    }
+    .picture .ico__picture1,
+    .picture .ico__picture2,
+    .picture .ico__picture3 {
+        height: 300px;
+        width: 335px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    .slider .textBig {
+        font-size: 60px;
+    }
+    .hut .slider::after, 
+    .area .slider::after, 
+    .about .slider::after {
+        height: 97%;
+    }
+    .price .button_header {
+        font-size: 16px;
+    }
+    .price .button_header, 
+    .price .button_price {
+        width: 200px;
+        height: 75px;
+    }
+    .cabins .cabins_text h3, 
+    .forest .forest_text h3 {
+        font-size: 36px;
+    }
+    .cabins {
+        margin-bottom: 120px;
+    }
+    .cabins {
+    margin-bottom: 150px;
+    }
+    .picture {
+        margin-bottom: 120px;
+    }
+    .more {
+        margin-bottom: 120px;
+    }
+    .best_clients {
+        margin-bottom: 120px;
+    }
+    .touch h3, h2 {
+        font-size: 35px;
+    }
+    footer > div p {
+        font-size: 14px;
+    }
+    footer > div {
+        padding-bottom: 50px;
+        padding-top: 70px;
+    }
+    /*---------------------the hut, area, about------------------*/
+    h2 {
+        margin-bottom: 70px;
+    }
+    .hut .slider, 
+    .area .slider, 
+    .about .slider {
+        margin-bottom: 100px;
+    }
+    .outside .outside_text h3, 
+    .inside .inside_text h3, 
+    .practicalities .practicalities_text h3 {
+        font-size: 36px;
+    }
+    .outside .outside_text p, 
+    .inside .inside_text p, 
+    .practicalities .practicalities_text p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .hut .slider .textBig2, 
+    .area .slider .textBig2, 
+    .about .slider .textBig2 {
+        font-size: 65px;
+    }
+    .area .slider .slideButton {
+        padding: 15px 35px;
+    }
+    .map .map_text h3 {
+        font-size: 35px;
+    }
+    .outside .ico_outside, 
+    .inside .ico_inside, 
+    .practicalities .ico_practicalities,
+    .vesterborg .ico_vesterborg, 
+    .restaurants .ico_restaurants, 
+    .nature .ico_nature, 
+    .drive .ico_drive, 
+    .charm .ico_charm, .road .ico_road {
+        width: 526px;
+        height: 451px;
+    }
+    .outside .outside_text, 
+    .practicalities .practicalities_text,
+    .vesterborg .vesterborg_text, 
+    .restaurants .restaurants_text, 
+    .drive .drive_text, 
+    .road .road_text {
+        padding-left: 110px;
+    }
+    .inside .inside_text,
+    .map .map_text, .nature .nature_text, 
+    .charm .charm_text {
+        padding-right: 110px;
+    }
+
+    .outside, 
+    .inside,
+    .practicalities,
+    .vesterborg, .map, 
+    .restaurants, .nature, 
+    .drive, .charm, .road {
+        margin-bottom: 100px;
+    }
+    .vesterborg .vesterborg_text h3, 
+    .restaurants .restaurants_text h3, 
+    .nature .nature_text h3, .drive .drive_text h3, 
+    .charm .charm_text h3 {
+        font-size: 31px;
+    }
+    .about .slider .slideButton, 
+    .about .slider .slideButton1 {
+        padding: 10px 35px;
+    }
+    /*---------------------END the hut, area, about------------------*/
+}
+
+@media (max-width: 1152px) {
+
+    body {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .button_header {
+        width: 180px;
+        height: 55px;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+    .slider .textBig {
+        font-size: 50px;
+    }
+    .textLittle {
+        font-size: 18px;
+    }
+    .slider::after {
+        height: 98%;
+    }
+    .price .button_header, 
+    .price .button_price {
+        width: 180px;
+        height: 65px;
+    }
+    .price .button_price {
+        font-size: 11px;
+        padding-left: 20px;
+    }
+    .button_price .price_euro {
+        font-size: 19px;
+    }
+    .price .button_header {
+        font-size: 15px;
+    }
+    .price1,
+    .cabins,
+    .picture,
+    .more {
+        margin-bottom: 70px;
+    }
+    .cabins .cabins_text h3, 
+    .forest .forest_text h3 {
+        font-size: 33px;
+    }
+    .forest .forest_text {
+        height: 470px;
+    }
+
+    .facilities .facilities_picture {
+        padding-bottom: 90px;
+        row-gap: 55px;
+    }
+    .facilities h3 {
+        padding: 70px 0;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+    .facilities .ico_facilities1,
+    .facilities .ico_facilities2,
+    .facilities .ico_facilities3,
+    .facilities .ico_facilities4,
+    .facilities .ico_facilities5,
+    .facilities .ico_facilities6,
+    .facilities .ico_facilities7,
+    .facilities .ico_facilities8,
+    .facilities .ico_facilities9,
+    .facilities .ico_facilities10,
+    .facilities .ico_facilities11,
+    .facilities .ico_facilities12 {
+        width: 60px;
+        height: 60px;
+    }   
+    .disc a {
+        font-size: 13px;
+    } 
+    .vesterborg .vesterborg_text h3, 
+    .restaurants .restaurants_text h3, 
+    .nature .nature_text h3, 
+    .drive .drive_text h3, .charm .charm_text h3 {
+        font-size: 26px;
+    }
+
+}
+
 @media (max-width: 1024px) {
      header .nav .burger-nav {
         font-size: 12px;
@@ -16,15 +250,15 @@
         line-height: 25px;
     }
     .header .slideText {
-        font-size: 45px !important
+        font-size: 45px !important;
     }
     .header .ico-logo_header {
         margin-left: 130px;
     }
-    .header .price {
+    .price1 {
         margin-bottom: 80px;
     }
-    .price .button_header {
+    .price1 .button_header {
         font-size: 12px; 
     }
     .price .button_header,
@@ -113,7 +347,74 @@
         padding-bottom: 25px;
     }
 }
+@media (max-width: 800px) { 
+
+
+
+
+
+}
 @media (max-width: 768px) {
+    
+    /*---------------menu------------*/
+    nav {
+        display: none !important;
+    }
+    .dropbtn {
+        background-color: #5B6460;
+        color: #fff;
+        height: 45px;
+        width: 150px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+
+   /* Dropdown button on hover & focus */
+        /* .dropbtn:hover, .dropbtn:focus {
+        background-color: #5B6460;
+        color: #fff;
+    } */
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 30px;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #5B6460;
+    color: #fff;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+
+    /*---------------end menu------------*/
+    .logo {
+        display: none;
+    }
 
     .header .ico-logo_header {
         margin-left: 55px;
@@ -129,7 +430,7 @@
     .slider-dots_item {
         height: 40px;
     }
-    .header .price {
+    .price1 {
     display: none;
     }
     .header {
@@ -172,21 +473,7 @@
         padding: 0 70px 80px;
         row-gap: 17px;
     }
-    .facilities .ico_facilities1,
-    .facilities .ico_facilities2,
-    .facilities .ico_facilities3,
-    .facilities .ico_facilities4,
-    .facilities .ico_facilities5,
-    .facilities .ico_facilities6,
-    .facilities .ico_facilities7,
-    .facilities .ico_facilities8,
-    .facilities .ico_facilities9,
-    .facilities .ico_facilities10,
-    .facilities .ico_facilities11,
-    .facilities .ico_facilities12 {
-        background-size: contain;
-        background-repeat: no-repeat;
-    }    
+    
     .facilities .ico {
         width: 50px;
         height: 50px;
@@ -260,59 +547,6 @@
 }
 @media (max-width: 452px) {
 
-    /*---------------menu------------*/
-    nav {
-        display: none !important;
-    }
-    .dropbtn {
-        background-color: #fff;
-        color: #5B6460;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Dropdown button on hover & focus */
-    .dropbtn:hover, .dropbtn:focus {
-        background-color: #fff;
-    }
-
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        font-size: 14px;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd}
-
-    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-    .show {display:block;}
-
-    /*---------------end menu------------*/
-    .logo {
-        display: none;
-    }
     .picture {
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 40px;

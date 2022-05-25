@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/area.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/media.css">
     <title>About us</title>
 </head>
 <body>
@@ -20,14 +20,10 @@
         <div class="slider">
             <div class="item">
                 <img src="img/about_main1.png" alt="Первый слайд">
-                <div class="slideText">About Us</div>
-                <a class="slideButton" href="#touch1">CONTACT US</a>
-                <a class="slideButton1" href="#touch1">Read FAQ</a>
             </div>
 
             <div class="item">
                 <img src="img/about_main2.png" alt="Второй слайд">
-                <div class="slideText">About Us</div>
             </div>
 
             <a class="prev1" onclick="minusSlide()">&xlarr;</a>
@@ -37,6 +33,9 @@
                 <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
                 <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
             </div>
+            <div class="textBig2">About Us</div>
+            <a class="slideButton" href="#touch1">CONTACT US</a>
+            <a class="slideButton1" href="#touch1">Read FAQ</a>
         </div>
         <!-- ---------------------------- слайдер конец -------------------------------------------   -->
 
@@ -53,13 +52,16 @@
         </div>
         
         <div class="wrapper_about">
-            <div class="box1"><img src="/img/road1.png" alt=""></div>
-            <div class="box2"><img src="/img/road2.png" alt=""></div>
-            <div class="box3"><img src="/img/road3.png" alt=""></div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
             <div class="box4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-            <div class="box5"><img src="/img/road4.png" alt=""></div>
+            <div class="box5"></div>
          </div>
-
+         <!-- <img src="/img/road2.png" alt="">
+        <img src="/img/road1.png" alt="">
+        <img src="/img/road3.png" alt="">
+        <img src="/img/road4.png" alt=""> -->
          <!-- ---------------------------- Touch -------------------------------------------   --> 
 
 <div class="touch">
@@ -77,11 +79,11 @@
     <div>
         <form class="about_form">
             <input type="text" placeholder="FirstName"/>
-            <input type="text" placeholder="Last Name"/><br/>
+            <input type="text" placeholder="LastName"/><br/>
             <input type="email" placeholder="Email"/><br/>
             <input type="email" placeholder="Subject"/> <br/>
             <textarea placeholder="Mail..." rows="3"></textarea><br/>
-            <input type="submit" value="SEND">
+            <button class='button button_header'>SEND</button>
         </form>
     </div>
 </div>

@@ -1,10 +1,10 @@
-
+// function myHeader() {
 let header = document.querySelector('header');
 header.innerHTML = `<div class="nav">
 <div class="logo"><i class="ico ico-logo_header"></i></div>
 <nav class="burger-nav">
     <ul>
-        <li><a href="#">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="hut.html">THE HUT</a></li>
         <li><a href="area.html">THE AREA</a></li>
         <li><a href="about.html">ABOUT US</a></li>
@@ -65,4 +65,6 @@ header.innerHTML = `<div class="nav">
 </div>
 </div>`;
 let slider = document.getElementsByClassName('slider');
-slider.insertAdjacentHTML('beforeBegin', 'header')
+slider.insertAdjacentHTML('beforeBegin', 'header');
+// }
+// export default {myHeader};

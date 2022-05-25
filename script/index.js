@@ -1,4 +1,5 @@
 
+
 // Объявить переменную модального окна в текущей области видимости
 let modal = document.getElementById('myModal');
 // Переменная кнопки, открывающей модальное окно
@@ -87,6 +88,9 @@ let mailData = [];
 const emailAdd = function() {
   let email = this.closest('.email'),
       inputEmail = email.querySelector('input[name="mail"]').value; 
+
+      if ( inputEmail.length == 0 || inputEmail.length == ' ')
+      return;
 
       let base = {
         mail:inputEmail

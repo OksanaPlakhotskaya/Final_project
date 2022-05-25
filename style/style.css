@@ -22,6 +22,13 @@ ul {
 button:hover {
  cursor: pointer;    
 }
+a {
+    color: #5B6460;
+}
+a:hover {
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 50%);
+    transition: 0.5s;
+}
 .ico {
     display: block;
 }
@@ -38,13 +45,10 @@ button:hover {
     margin: 0 auto;
 }
 
-/* .header {
-    margin-bottom: 120px;
-} */
-
 .header .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 40px 0;
 }
 
@@ -65,10 +69,6 @@ button:hover {
     background-size: cover;
     width: 70px;
     height: 65px;
-    margin-left: 150px
-}
-.nav .button_header {
-    margin-right: 30px;
 }
 .dropdown {
     display: none;
@@ -105,10 +105,12 @@ button:hover {
     background-color: #E9ECE0;
     width: 150px;
     padding-left: 15px;
-    padding-top: 25px;
     vertical-align: middle;
     font-size: 12px;
     line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .button_price .price_euro {
     font-weight: bold;
@@ -151,6 +153,7 @@ button:hover {
     background-size: contain;
     background-repeat: no-repeat;
     height: 440px;
+    background-position: center;
 }
 .forest .forest_picture .ico_forest {
     background: url(/img/the_cabins.png);
@@ -223,7 +226,9 @@ height: 650px;
     column-gap: 10px;
     row-gap: 80px;
     text-align: center;
-    padding: 0 320px 150px;
+    width: 50%;
+    padding-bottom: 150px;
+    margin: 0 auto;
 }
 .facilities .facilities_picture>div {
     display: flex;
@@ -245,6 +250,9 @@ height: 650px;
     line-height: 28px;
 }
 
+.facilities .facilities_picture a>h5 {
+    font-weight: lighter;
+}
 .facilities .ico_facilities1 {
     background: url(/img/fridge.png);
 }
@@ -281,6 +289,21 @@ height: 650px;
 .facilities .ico_facilities12 {
     background: url(/img/towels.png);
 }
+.facilities .ico_facilities1,
+.facilities .ico_facilities2,
+.facilities .ico_facilities3,
+.facilities .ico_facilities4,
+.facilities .ico_facilities5,
+.facilities .ico_facilities6,
+.facilities .ico_facilities7,
+.facilities .ico_facilities8,
+.facilities .ico_facilities9,
+.facilities .ico_facilities10,
+.facilities .ico_facilities11,
+.facilities .ico_facilities12 {
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
 /* ----------------- END Facilities ---------------------- */
 
 /* ----------------- More about ---------------------- */
@@ -291,15 +314,18 @@ height: 650px;
     position: relative;
     margin-bottom: 150px;
 }
-.more .ico_more1, .more .ico_more2 {
-    height: 560px;
-    width: 100%;
-}
+
 .more .ico_more1 {
 background: url(/img/more_about_us1.png);
 }
 .more .ico_more2 {
     background: url(/img/more_about_us2.png);
+}
+.more .ico_more1, .more .ico_more2 {
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
 }
 .more .disc {
     position: absolute;
@@ -310,7 +336,7 @@ background: url(/img/more_about_us1.png);
     display: flex;
     align-items: center;
     justify-content: center;
-    left: calc(50% - 85px);
+    left: calc(50% - 78px);
     top: calc(50% - 80px);
 }
 .more .disc a {
@@ -373,6 +399,11 @@ h2 {
 }
 .touch .ico_social1:hover {
     background: url(/img/instagram1.png) no-repeat center;
+    transition: 1s;
+}
+.touch .ico_social1:not(:hover),
+.touch .ico_social2:not(:hover),
+.touch .ico_social3:not(:hover) {
     transition: 1s;
 }
 .touch .ico_social2 {
@@ -687,3 +718,5 @@ footer input:-ms-input-placeholder { /* Internet Explorer 10+ */
  }
 
  /*----------------END POP-UP ФОРМА----------------------*/
+
+ 
