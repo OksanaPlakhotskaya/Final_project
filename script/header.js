@@ -12,7 +12,7 @@ header.innerHTML = `<div class="nav">
     </ul>
 </nav>
 <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Menu</button>
+    <button onclick="myFunction()" class="dropbtn">MENU</button>
     <div id="myDropdown" class="dropdown-content">
       <a href="index.html">HOME</a>
       <a href="hut.html">THE HUT</a>

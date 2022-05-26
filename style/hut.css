@@ -17,13 +17,6 @@
     margin: 0 auto;
     margin-bottom: 150px;
 }
-.outside .ico_outside,
-.inside .ico_inside,
-.practicalities .ico_practicalities {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .outside .ico_outside {
     background: url(/img/hut_outside.png);
 }
@@ -32,6 +25,12 @@
 }
 .practicalities .ico_practicalities {
     background: url(/img/hut_breakfast.png);
+}
+.outside .ico_outside,
+.inside .ico_inside,
+.practicalities .ico_practicalities {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .outside .ico_outside, 
 .inside .ico_inside,
