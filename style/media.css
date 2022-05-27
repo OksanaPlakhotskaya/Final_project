@@ -136,7 +136,7 @@
     .restaurants .restaurants_text h3, 
     .nature .nature_text h3, .drive .drive_text h3, 
     .charm .charm_text h3 {
-        font-size: 31px;
+        font-size: 30px;
     }
     .about .slider .slideButton, 
     .about .slider .slideButton1 {
@@ -477,12 +477,6 @@
         /* margin-left: 30px; */
     }
     
-    /* Dropdown button on hover & focus */
-        /* .dropbtn:hover, .dropbtn:focus {
-        background-color: #5B6460;
-        color: #fff;
-    } */
-
     /* The container <div> - needed to position the dropdown content */
     .dropdown {
         position: relative;
@@ -805,7 +799,7 @@
         height: 40px;
     }
     .about_form input[type="text"] {
-        width: 42%;
+        width: 43%;
         height: 40px;
     }
     /*---------------------END the hut, area, about------------------*/
@@ -964,12 +958,21 @@
     .more>div:not(:last-child) {
         display: none;
     }
+    .touch .ico_touch {
+        width: 75%;
+    }
+    .about .touch > div:last-child {
+        width: 100%;
+    }
     .touch h3, h2 {
         font-size: 23px;
         margin-bottom: 25px;
     }
     .touch {
         display: block;
+    }
+    .touch .price>div {
+        width: 75%;
     }
     .touch .social {
         display: flex;
@@ -984,9 +987,6 @@
     .touch .social .ico {
         width: 40px;
         height: 40px;
-    }
-    .about_form {
-        text-align: center;
     }
     .about_form input[type="email"] {
         height: 33px;
@@ -1225,6 +1225,9 @@
     .touch .ico_touch {
         width: 90%;
     }
+    .touch .price>div {
+        width: 90%;
+    }
     .price .button_header,
     .price .button_price {
         width: 160px;
@@ -1307,6 +1310,7 @@
     .modal-content {
         width: 90%;
     }
+    
     footer > div {
         padding-top: 25px;
     }

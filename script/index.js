@@ -1,5 +1,4 @@
 
-
 // Объявить переменную модального окна в текущей области видимости
 let modal = document.getElementById('myModal');
 // Переменная кнопки, открывающей модальное окно
@@ -27,6 +26,7 @@ window.addEventListener('click', function(event) {
   modal.style.display = 'none';
   }
   })
+
 
 /* -----------------API-------------------- */
 function createNode(element) {
@@ -103,3 +103,57 @@ const emailAdd = function() {
 let buttonAdd = document.querySelector('.email');
 if(buttonAdd)buttonAdd.addEventListener('click', emailAdd);
 /*----------------------END LocalStorage--------------------*/
+
+document.getElementsByClassName('line').forEach((elem) => {
+
+  elem.onmouseenter =
+  elem.onmouseleave = (e) => {
+
+      const tolerance = 5
+
+      const left = 0
+      const right = elem.clientWidth
+
+      let x = e.pageX - elem.offsetLeft
+
+      if (x - tolerance < left) x = left
+      if (x + tolerance > right) x = right
+
+      elem.style.setProperty('--x', `${ x }px`)
+
+  }
+
+})
+
+
+// let formData = [];
+// const formAdd = function() {
+//   let formSend = this.closest('.decor'),
+//       firstName = formSend.querySelector('input[name="FirstName"]').value;
+//       lastName = formSend.querySelector('input[name="LastName"]').value;
+//       tel = formSend.querySelector('input[name="tel"]').value;
+//       inputEmail2 = formSend.querySelector('input[name="mail1"]').value; 
+//       arrival = formSend.querySelector('input[name="arrival"]').value; 
+//       departure = formSend.querySelector('input[name="departure"]').value; 
+//       num = formSend.querySelector('input[name="num"]').value; 
+//       numCh = formSend.querySelector('input[name="numCh"]').value; 
+//       area = formSend.querySelector('input[name="area"]').value; 
+
+//       let baseForm = {
+//         firstName1:firstName,
+//         lastName1:lastName,
+//         phone:tel,
+//         Email:inputEmail2,
+//         arrival1:arrival,
+//         departure1:departure,
+//         num1:num,
+//         numCh1:numCh,
+//         area1: area
+//       };
+
+//       console.log(baseForm);
+//       formData.push(baseForm);
+//       // localStorage.setItem('mailData', JSON.stringify(mailData));
+// }
+// let buttonSend = document.querySelector('input[name="send"]');
+// if(buttonSend)buttonSend.addEventListener('click', formAdd);
