@@ -126,34 +126,3 @@ document.getElementsByClassName('line').forEach((elem) => {
 })
 
 
-// let formData = [];
-// const formAdd = function() {
-//   let formSend = this.closest('.decor'),
-//       firstName = formSend.querySelector('input[name="FirstName"]').value;
-//       lastName = formSend.querySelector('input[name="LastName"]').value;
-//       tel = formSend.querySelector('input[name="tel"]').value;
-//       inputEmail2 = formSend.querySelector('input[name="mail1"]').value; 
-//       arrival = formSend.querySelector('input[name="arrival"]').value; 
-//       departure = formSend.querySelector('input[name="departure"]').value; 
-//       num = formSend.querySelector('input[name="num"]').value; 
-//       numCh = formSend.querySelector('input[name="numCh"]').value; 
-//       area = formSend.querySelector('input[name="area"]').value; 
-
-//       let baseForm = {
-//         firstName1:firstName,
-//         lastName1:lastName,
-//         phone:tel,
-//         Email:inputEmail2,
-//         arrival1:arrival,
-//         departure1:departure,
-//         num1:num,
-//         numCh1:numCh,
-//         area1: area
-//       };
-
-//       console.log(baseForm);
-//       formData.push(baseForm);
-//       // localStorage.setItem('mailData', JSON.stringify(mailData));
-// }
-// let buttonSend = document.querySelector('input[name="send"]');
-// if(buttonSend)buttonSend.addEventListener('click', formAdd);
